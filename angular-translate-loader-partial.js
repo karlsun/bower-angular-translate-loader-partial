@@ -489,6 +489,20 @@ function $translatePartialLoader() {
       return registeredParts;
     };
 
+    /**
+     * @ngdoc function
+     * @name pascalprecht.translate.$translatePartialLoader#getPart
+     * @methodOf pascalprecht.translate.$translatePartialLoader
+     *
+     * @description
+     * Gets part of the parts that were added with the `addPart`.
+     *
+     * @returns {object} Returns object of registered part.
+     */
+    service.getPart = function(name){
+      return parts[name];
+    }
+
 
 
     /**
